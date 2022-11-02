@@ -1,0 +1,48 @@
+
+<html>
+ <head>
+ <script type="text/javascript">
+ var czlowiek = {
+nazwisko: 'Nowacki',
+imie: 'Marek',
+zawod: 'informatyk',
+pokaz: function ()
+{
+ document.write(this.nazwisko + ' ' + this.imie)
+ }
+}
+czlowiek.pokaz();
+czlowiek.wiek=19;
+czlowiek.wypisz=function() {alert('Wiek: ' + this.wiek + 'lat')}
+czlowiek.wypisz();
+
+document.write("<br>");
+document.write("<br>");
+
+
+
+ var samochod = {
+nazwa: 'samochod 1',
+marka: 'Bugatti',
+cenaeur: '1.650.000',
+
+samochod_wyswietl_markowski: function ()
+{
+ document.write(this.nazwa + ' ' + this.marka)
+ }
+}
+
+
+samochod.samochod_wyswietl_markowski();
+
+samochod.cenapln=4;
+samochod.pisz=function() {alert('cena w zl: ' + this.cenapln + ' mln pl')}
+samochod.pisz();
+ </script>
+ </head>
+<body>
+<br>
+<br>
+ programowanie obiektowe
+</body>
+</html>

@@ -1,0 +1,55 @@
+
+<html>
+ <head>
+ <script type="text/javascript">
+ function klient(nazwisko_k,imie_k,zawod_k)//początek konstruktora
+{
+this.nazwisko=nazwisko_k;
+this.imie=imie_k;
+this.zawod=zawod_k;
+}//koniec konstruktora
+ klient.prototype.wypisz = function () //definicja metody
+ {
+ alert(this.nazwisko + ' ' + this.imie+ ' ' + this.zawod);
+ };
+var osoba1 = new klient("Kowalski", "Jan", "kierowca"); // nowy obiekt osoba1
+var osoba2 = new klient('Nowak', 'Anna', 'sekretarka');
+osoba1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1
+osoba2.wypisz();
+ document.write("dostęp do właściwości"+"<br>");
+// poniżej dostęp do pól osoby1
+ document.write("klient pierwszy"+" "+osoba1.nazwisko+" "+osoba1.imie+" "+osoba1.zawod);
+ 
+ 
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+ 
+ 
+ 
+  function samochod_wyswietl_markowski(cena_mar,waga_mar,marka_mar)//początek konstruktora
+{
+
+this.cena=cena_mar;
+this.waga=waga_mar;
+this.marka=marka_mar;
+}//koniec konstruktora
+ samochod_wyswietl_markowski.prototype.wypisz = function () //definicja metody
+ {
+ alert(this.cena + ' ' + this.waga+ ' ' + this.marka);
+ };
+var samochod1 = new samochod_wyswietl_markowski("4mln", "2850kg", "bugatti"); // nowy obiekt osoba1
+var samochod2 = new samochod_wyswietl_markowski('3mln', '3200kg', 'bugatti');
+samochod1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1
+samochod2.wypisz();
+ document.write("dane samochodu"+"<br>");
+// poniżej dostęp do pól osoby1
+ document.write("pierwszy pojazd"+" "+samochod1.cena+" "+samochod1.waga+" "+samochod1.marka);
+ </script>
+ </head>
+<body>
+<br>
+ programowanie obiektowe
+</body>
+</html>
